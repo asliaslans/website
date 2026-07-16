@@ -7,8 +7,6 @@
   --accent: #4a6b3f;
   --accent-dark: #354e2d;
   --pill-bg: #eef0e6;
-  --placeholder-a: #dfe3d6;
-  --placeholder-b: #e8ebe0;
   --serif: 'Playfair Display', serif;
   --sans: 'Work Sans', sans-serif;
 }
@@ -48,18 +46,12 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 .nav .links a.active { color: var(--ink); }
 .nav .links a.active:hover { text-decoration: none; }
 
-/* Hero placeholder image block */
-.hero-placeholder {
-  position: relative;
+/* Hero photo */
+.hero-photo {
+  display: block;
+  width: 100%;
   height: 320px;
-  background: repeating-linear-gradient(135deg, var(--placeholder-a), var(--placeholder-a) 12px, var(--placeholder-b) 12px, var(--placeholder-b) 24px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font: 12px monospace;
-  color: var(--muted);
-  text-align: center;
-  padding: 12px;
+  object-fit: cover;
 }
 
 /* Profile section */
@@ -70,20 +62,12 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
   align-items: flex-start;
   border-bottom: 1px solid var(--border);
 }
-.headshot-placeholder {
+.headshot {
   flex-shrink: 0;
   width: 128px;
   height: 128px;
   border-radius: 8px;
-  overflow: hidden;
-  background: repeating-linear-gradient(135deg, var(--placeholder-a), var(--placeholder-a) 10px, var(--placeholder-b) 10px, var(--placeholder-b) 20px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font: 11px monospace;
-  color: var(--muted);
-  padding: 8px;
+  object-fit: cover;
 }
 .profile .who { flex: 1; min-width: 0; }
 .profile h1 {
