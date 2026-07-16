@@ -46,37 +46,77 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 .nav .links a.active { color: var(--ink); }
 .nav .links a.active:hover { text-decoration: none; }
 
-/* Profile section */
-.profile {
-  padding: 36px 30px;
-  display: flex;
-  gap: 26px;
-  align-items: flex-start;
+/* Hero */
+.hero {
+  padding: 40px 30px 36px;
   border-bottom: 1px solid var(--border);
+}
+.hero-name {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(38px, 6vw, 60px);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0 0 10px;
+}
+.hero-name .hero-suffix {
+  font-size: 0.4em;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0;
+}
+.hero-lead {
+  font-size: 16.5px;
+  color: var(--muted);
+  margin: 0 0 28px;
+}
+.hero-body {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
 }
 .headshot {
   flex-shrink: 0;
-  width: 128px;
-  height: 128px;
+  width: 220px;
+  height: 280px;
   border-radius: 8px;
   object-fit: cover;
+  object-position: top;
 }
-.profile .who { flex: 1; min-width: 0; }
-.profile h1 {
-  font-family: var(--serif);
-  font-size: 32px;
-  font-weight: 600;
-  margin: 0 0 6px;
-}
-.profile .title {
-  font-size: 15.5px;
-  color: var(--muted);
-  margin: 0 0 16px;
-}
-.profile .bio {
+.hero-text { flex: 1; min-width: 0; }
+.bio {
   font-size: 16.5px;
   line-height: 1.65;
   margin: 0;
+}
+.social-links {
+  margin: 18px 0 0;
+  font-size: 14.5px;
+  font-weight: 500;
+}
+
+/* Stats block */
+.stats-block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin: 32px 0 0;
+}
+.stat-cell { background: var(--bg); padding: 14px 16px; }
+.stat-value {
+  font-family: var(--serif);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.stat-label {
+  font-size: 12.5px;
+  color: var(--muted-2);
+  margin-top: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
 }
 
 /* Generic content section */
@@ -100,18 +140,41 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 .section-head h2 { margin: 0; }
 .section-head .see-all { font-size: 14.5px; font-weight: 500; }
 
-/* Tag pills (research interests) */
-.tags { display: flex; flex-wrap: wrap; gap: 10px; }
-.tag {
-  font-size: 14px;
-  padding: 8px 16px;
-  background: var(--pill-bg);
-  border-radius: 20px;
+/* Research interest cards */
+.interest-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+.interest-card {
+  padding: 16px 20px 16px 0;
+  border-top: 1px solid var(--border);
+}
+.interest-card:nth-child(-n+2) { border-top: none; }
+.interest-card-title {
+  font-family: var(--serif);
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+.interest-card p:not(.interest-card-title) {
+  font-size: 14.5px;
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0;
 }
 
 /* News list */
-.news-list { display: flex; flex-direction: column; gap: 14px; }
-.news-item { display: flex; gap: 16px; font-size: 15.5px; line-height: 1.6; }
+.news-list { display: flex; flex-direction: column; }
+.news-item {
+  display: flex;
+  gap: 16px;
+  font-size: 15.5px;
+  line-height: 1.6;
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+}
+.news-item:first-child { border-top: none; padding-top: 0; }
 .news-item .date {
   flex-shrink: 0;
   width: 84px;
@@ -124,17 +187,6 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 .pub-list p { margin: 0; }
 .pub-title { font-size: 16px; line-height: 1.55; margin: 0 0 4px; }
 .pub-meta { font-size: 14.5px; color: var(--muted-2); line-height: 1.5; }
-
-/* Footer */
-footer {
-  padding: 30px 30px 60px;
-  border-top: 1px solid var(--border);
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-  font-size: 15px;
-  font-weight: 500;
-}
 
 /* CV page */
 .cv-header {
@@ -218,5 +270,9 @@ footer {
 .cv-page-body { padding: 0 30px 100px; }
 
 @media (max-width: 600px) {
-  .profile { flex-direction: column; }
+  .hero-body { flex-direction: column; }
+  .headshot { width: 160px; height: 200px; }
+  .stats-block { grid-template-columns: repeat(2, 1fr); }
+  .interest-cards { grid-template-columns: 1fr; }
+  .interest-card:nth-child(2) { border-top: 1px solid var(--border); }
 }
