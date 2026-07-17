@@ -249,7 +249,8 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 .cv-header .hero-name { margin: 0 0 10px; }
 .cv-role-line {
   font-size: 16.5px;
-  color: var(--ink);
+  font-weight: 500;
+  color: var(--tagline);
   margin: 0 0 4px;
 }
 .cv-affil-line {
