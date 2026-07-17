@@ -7,7 +7,7 @@
   --accent: #4a6b3f;
   --accent-dark: #354e2d;
   --pill-bg: #eef0e6;
-  --serif: 'Playfair Display', serif;
+  --display: 'Sora', sans-serif;
   --sans: 'Work Sans', sans-serif;
 }
 
@@ -37,7 +37,7 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
   border-bottom: 1px solid var(--border);
 }
 .nav .brand {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 20px;
   font-weight: 600;
 }
@@ -52,7 +52,7 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
   border-bottom: 1px solid var(--border);
 }
 .hero-name {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-weight: 600;
   font-size: clamp(38px, 6vw, 60px);
   line-height: 1.05;
@@ -109,7 +109,7 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
   margin: 20px 0;
   padding: 4px 0 4px 20px;
   border-left: 3px solid var(--accent);
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 18px;
   font-style: italic;
   color: var(--ink);
@@ -136,7 +136,7 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 }
 .stat-cell { background: var(--bg); padding: 14px 16px; }
 .stat-value {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 24px;
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -156,7 +156,7 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 }
 .section:last-of-type { border-bottom: none; }
 .section h2 {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 21px;
   font-weight: 600;
   margin: 0 0 16px;
@@ -182,7 +182,7 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 }
 .interest-card:nth-child(-n+2) { border-top: none; }
 .interest-card-title {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 16px;
   font-weight: 600;
   margin: 0 0 4px;
@@ -248,7 +248,7 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
   border-top: 1px solid var(--border);
 }
 .cv-section h2 {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 20px;
   font-weight: 600;
   margin: 0 0 16px;
