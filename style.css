@@ -266,8 +266,6 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 .cv-contact-line a { font-weight: 500; }
 .cv-updated { font-size: 15px; color: var(--muted-2); margin: 16px 0 8px; }
 
-.cv-page-body { counter-reset: cvsection; }
-
 .cv-section {
   padding: 32px 0;
   border-top: 1px solid var(--border);
@@ -277,16 +275,6 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
   font-size: 20px;
   font-weight: 600;
   margin: 0 0 16px;
-}
-.cv-section:not(.no-number) {
-  counter-increment: cvsection;
-}
-.cv-section:not(.no-number) h2::before {
-  content: "§ " counter(cvsection) "  ";
-  font-family: monospace;
-  font-size: 15px;
-  font-weight: 500;
-  color: var(--muted-2);
 }
 
 .cv-section-head {
