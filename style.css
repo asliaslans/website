@@ -97,32 +97,41 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 
 .hero-banner {
   display: block;
+  max-width: 460px;
   width: 100%;
-  max-height: 320px;
+  height: 260px;
   object-fit: cover;
   border-radius: 8px;
-  margin: 0 0 24px;
+  margin: 8px auto 24px;
 }
 
-/* IWH quote */
+/* IWH director callout */
 .iwh-quote {
-  margin: 20px 0;
-  padding: 4px 0 4px 20px;
-  border-left: 3px solid var(--accent);
-  font-family: var(--display);
-  font-size: 18px;
-  font-style: italic;
-  color: var(--ink);
-  line-height: 1.5;
+  margin: 20px 0 0;
+  padding: 18px 22px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--pill-bg);
 }
-.iwh-quote cite {
-  display: block;
-  margin-top: 8px;
-  font-family: var(--sans);
+.iwh-quote-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted-2);
+  margin: 0 0 8px;
+}
+.iwh-quote-text {
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0;
+}
+.iwh-quote-cite {
   font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   color: var(--muted-2);
+  margin: 10px 0 0;
 }
 
 /* Stats block */
@@ -161,6 +170,13 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
   font-weight: 600;
   margin: 0 0 16px;
 }
+.section h3 {
+  font-family: var(--sans);
+  font-size: 16.5px;
+  font-weight: 600;
+  margin: 28px 0 10px;
+}
+.section h3:first-of-type { margin-top: 20px; }
 .section-head {
   display: flex;
   align-items: baseline;
