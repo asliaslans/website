@@ -91,6 +91,9 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
   line-height: 1.65;
   margin: 0;
 }
+.bio + .bio {
+  margin-top: 14px;
+}
 .social-links {
   margin: 18px 0 0;
   font-size: 14.5px;
