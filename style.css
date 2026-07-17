@@ -95,6 +95,36 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
   font-weight: 500;
 }
 
+.hero-banner {
+  display: block;
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 0 24px;
+}
+
+/* IWH quote */
+.iwh-quote {
+  margin: 20px 0;
+  padding: 4px 0 4px 20px;
+  border-left: 3px solid var(--accent);
+  font-family: var(--serif);
+  font-size: 18px;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1.5;
+}
+.iwh-quote cite {
+  display: block;
+  margin-top: 8px;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: var(--muted-2);
+}
+
 /* Stats block */
 .stats-block {
   display: grid;
