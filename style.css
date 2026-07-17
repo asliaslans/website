@@ -146,6 +146,9 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 .stats-block.cols-4 {
   grid-template-columns: repeat(4, 1fr);
 }
+.stats-block.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
 .stat-cell { background: var(--bg); padding: 14px 16px; }
 .stat-value {
   font-family: var(--display);
