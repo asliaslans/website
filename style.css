@@ -426,7 +426,7 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 @media (max-width: 600px) {
   .hero-body { flex-direction: column; }
   .headshot { width: 160px; height: 200px; }
-  .stats-block { grid-template-columns: repeat(2, 1fr); }
+  .stats-block, .stats-block.cols-4, .stats-block.cols-2 { grid-template-columns: repeat(2, 1fr); }
   .interest-cards { grid-template-columns: 1fr; }
   .interest-card:nth-child(2) { border-top: 1px solid var(--border); }
   .profile-layout { flex-direction: column; }
