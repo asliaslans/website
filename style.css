@@ -7,6 +7,7 @@
   --accent: #4a6b3f;
   --accent-dark: #354e2d;
   --pill-bg: #eef0e6;
+  --tagline: #7a2e3a;
   --display: 'Sora', sans-serif;
   --sans: 'Work Sans', sans-serif;
 }
@@ -67,7 +68,8 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
 }
 .hero-lead {
   font-size: 16.5px;
-  color: var(--muted);
+  font-weight: 500;
+  color: var(--tagline);
   margin: 0 0 28px;
 }
 .hero-body {
