@@ -188,6 +188,12 @@ a:hover { color: var(--accent-dark); text-decoration: underline; }
   margin: 28px 0 10px;
 }
 .section h3:first-of-type { margin-top: 20px; }
+.section h3.standout-title {
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent);
+}
 .section-head {
   display: flex;
   align-items: baseline;
